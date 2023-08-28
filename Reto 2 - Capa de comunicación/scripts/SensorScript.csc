@@ -16,6 +16,7 @@ end
 
 if(tipo=="alerta")
    send mens ant
+   inc ite
 end
 
 areadsensor tempSen
@@ -23,9 +24,9 @@ rdata tempSen SensTipo idSens temp
 if(temp>30)
    data mens "alerta" lonSen latSen
    send mens ant
+   inc ite
 end
 
-inc ite
 print ite
 if(ite>=1000)
    stop
