@@ -90,6 +90,16 @@ Finalmente se ejecuta una prueba de 600 usuarios por segundo en la aplicación c
 
 <image src="images/jmeter-timescale-query-reto4-04.jpg" width="100%" height="100%" alt="timescale-600">
 
+### Consolidado de iteraciones
+
+|            | Iteración 1 | Iteración 2 | Iteración 3 | Iteración 4 |
+| ---------- | ----------- | ----------- | ----------- | ----------- |
+| Tecnología | Timescale   | Postgres    | Timescale   | Postgres    | Timescale | Postgres | Timescale |
+| Samples    | 61          | 60          | 120         | 120         | 180 | 180 | 600 |
+| Average    | 1867        | 36050       | 3767        | 53402       | 5298 | 55223 | 15591 |
+| Min        | 0           | 0           | 0           | 0           | 0 | 0 | 0 |
+| Max        | 2297        | 38212       | 5424        | 64919       | 8167 | 71354 | 27324 |
+| %Error     | 0           | 0           | 0           | 20          | 0 | 46,67 | 2,17 |
 
 ## Conclusión 
 
